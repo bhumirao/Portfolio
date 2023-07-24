@@ -1,0 +1,216 @@
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    margin: 0;
+                                    padding: 0;
+                                    scroll-behavior: smooth;
+                                }
+                                /* Navigation Bar */
+                                
+                                nav {
+                                    background-color: #333;
+                                    color: #fff;
+                                    padding: 1rem;
+                                }
+                                
+                                nav ul {
+                                    list-style: none;
+                                    margin: 0;
+                                    padding: 0;
+                                    display: flex;
+                                }
+                                
+                                nav li {
+                                    margin-right: 1rem;
+                                }
+                                
+                                nav a {
+                                    text-decoration: none;
+                                    color: #fff;
+                                }
+                                /* Hero Section */
+                                
+                                header {
+                                    background-image: url("stars.jpg");
+                                    background-size: cover;
+                                    background-position: center;
+                                    height: 90vh;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #fff;
+                                }
+                                
+                                .hero-content {
+                                    text-align: center;
+                                    font-size: 30px;
+                                    color: #C0C0C0
+                                }
+                                /* Typing Animation for the "Tech Enthusiast" content */
+                                
+                                .typing-text {
+                                    overflow: hidden;
+                                    /* Hide overflow to create the typing effect */
+                                    white-space: nowrap;
+                                    /* Prevent line breaks */
+                                    border-right: 2px solid transparent;
+                                    /* Add an invisible border initially */
+                                    animation: typing 4s steps(20), blink-caret 0.75s step-end;
+                                    /* Apply typing and blinking animation */
+                                }
+                                
+                                @keyframes typing {
+                                    from {
+                                        width: 0;
+                                        /* Start with no width (invisible text) */
+                                    }
+                                    to {
+                                        width: 100%;
+                                        /* Gradually reveal the text */
+                                    }
+                                }
+                                /* Custom Font for the "Hello, I'm Bhumika" part */
+                                
+                                .bold-text {
+                                    font-weight: flex-bold;
+                                    font-size: 50px;
+                                    font-style: bold;
+                                    /* Replace with the desired font family */
+                                }
+                                /* About and Projects Sections */
+                                
+                                #about,
+                                #projects {
+                                    padding: 2rem;
+                                    background: linear-gradient(to right, #e5c3e5, #b1dfe6, #918af4);
+                                    /* Add the gradient colors here */
+                                    position: relative;
+                                    transition: transform 0.3s ease-in-out;
+                                    /* Add transition for a catchy effect */
+                                }
+                                
+                                #about {
+                                    background: linear-gradient(to right, #9fb8e3, #66ddf0, #a4abef);
+                                    padding: 2rem;
+                                    background: linear-gradient(to right, #ace9eb, #e5c2c2, #abacee);
+                                    position: relative;
+                                    transition: transform 0.3s ease-in-out;
+                                }
+                                /* Catchy hover effect for the About Section */
+                                
+                                #about:hover {
+                                    transform: translateY(-10px);
+                                }
+                                
+                                .about-content {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                
+                                .profile-pic {
+                                    width: 450px;
+                                    height: 250px;
+                                    border-radius: 50%;
+                                    /* Create a rounded shape */
+                                    overflow: hidden;
+                                    margin-right: 1rem;
+                                    border: 4px solid #fff;
+                                    /* Add a white border for a neat look */
+                                    box-shadow: 0 4px 8px rgba(67, 66, 66, 0.1);
+                                    /* Add a subtle shadow effect */
+                                }
+                                
+                                .profile-pic img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                                /* Catchy hover effect for About and Projects Sections */
+                                
+                                #about:hover,
+                                #contact:hover,
+                                #contact #projects:hover {
+                                    transform: translateY(-10px);
+                                }
+                                /* Animation for Project Cards (replace this with your actual project cards) */
+                                
+                                .project-card {
+                                    transform: translateY(0);
+                                    transition: transform 0.3s ease-in-out;
+                                }
+                                
+                                .project-card:hover {
+                                    transform: translateY(-10px);
+                                }
+                                /* About and Projects Sections */
+                                
+                                .container {
+                                    padding: 2rem;
+                                }
+                                /* Contact Section */
+                                
+                                #contact {
+                                    background: linear-gradient(to right, #bca4ea, #e4f0c1, #dbb5df);
+                                    padding: 2rem;
+                                    position: relative;
+                                }
+                                
+                                .contact-me {
+                                    padding: 40px;
+                                    text-align: center;
+                                }
+                                
+                                .contact-me h2 {
+                                    font-size: 28px;
+                                    margin-bottom: 20px;
+                                }
+                                
+                                .contact-me p {
+                                    font-size: 16px;
+                                    margin-bottom: 30px;
+                                }
+                                
+                                .contact-links {
+                                    list-style: none;
+                                    padding: 0;
+                                }
+                                
+                                .contact-links li {
+                                    display: inline-block;
+                                    margin: 10px;
+                                }
+                                
+                                .contact-links img {
+                                    width: 60px;
+                                    height: 55px;
+                                    margin-right: 8px;
+                                }
+                                
+                                .contact-links a {
+                                    display: inline-block;
+                                    padding: 10px 20px;
+                                    font-size: 16px;
+                                    color: #333;
+                                    text-decoration: none;
+                                    border-radius: 5px;
+                                    transition: background-color 0.2s, color 0.2s;
+                                }
+                                
+                                .contact-links a:hover {
+                                    background-color: #333;
+                                    color: #d8b7b7;
+                                }
+                                /* Footer Section */
+                                
+                                footer {
+                                    text-align: center;
+                                    padding: 1rem;
+                                    background-color: #333;
+                                    color: #fff;
+                                }
+                                /* Media Queries for Responsiveness (adjust as needed) */
+                                
+                                @media screen and (max-width: 768px) {
+                                    header {
+                                        height: 60vh;
+                                    }
+                                }
