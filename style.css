@@ -214,3 +214,59 @@
                                         height: 60vh;
                                     }
                                 }
+                                /* Media Query for Small Screens */
+                                
+                                @media screen and (max-width: 768px) {
+                                    header {
+                                        height: 60vh;
+                                        /* Reduce header height on small screens */
+                                    }
+                                    .hero-content {
+                                        padding: 2rem 1rem;
+                                        /* Adjust padding on small screens */
+                                    }
+                                    .bold-text {
+                                        font-size: 1.5rem;
+                                        /* Adjust font size for small screens */
+                                    }
+                                    .typing-text {
+                                        font-size: 0.9rem;
+                                        /* Adjust font size for small screens */
+                                    }
+                                    .profile-pic {
+                                        width: 120px;
+                                        height: 120px;
+                                    }
+                                    .about-content {
+                                        flex-direction: column;
+                                        /* Stack elements vertically on small screens */
+                                    }
+                                    .project-card {
+                                        margin-bottom: 1rem;
+                                        /* Reduce margin between project cards on small screens */
+                                    }
+                                }
+                                /* Media Query for Extra Small Screens */
+                                
+                                @media screen and (max-width: 480px) {
+                                    header {
+                                        height: 50vh;
+                                        /* Reduce header height further on extra small screens */
+                                    }
+                                    .bold-text {
+                                        font-size: 1.2rem;
+                                        /* Adjust font size for extra small screens */
+                                    }
+                                    .typing-text {
+                                        font-size: 0.8rem;
+                                        /* Adjust font size for extra small screens */
+                                    }
+                                    .profile-pic {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                    .project-card {
+                                        margin-bottom: 0.5rem;
+                                        /* Further reduce margin between project cards on extra small screens */
+                                    }
+                                }
